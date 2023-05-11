@@ -1,0 +1,91 @@
+<!--Steven Montoya
+CIS 133
+Final Project-->
+<!--The intent of registeration.html is to influence the user or webviewer to sign up for the run and pay a fee -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Papago Park's 8km Run - Registration</title>
+<link rel="stylesheet" type="text/css" href="run.css">
+</head>
+<body>
+<header>
+<h1>Papago Park's 8km Run</h1>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="eventdetails.html">Event Details</a>
+<a href="registration.html">Registration</a>
+<a href="aboutus.html">About Us</a>
+<a href="contactus.html">Contact Us</a>
+</nav>
+<h1>Register for the Papago Park's 8km Run</h1>
+<main>
+<section>
+<img src="runpapago.jpg" alt="Runners on Papago Park Trail">
+<h2>Next Event:</h2>
+<p>Date: May 20, 2023</p>
+<p>Time: 6:30AM until Last Participant Finishes</p>
+<p>Location: 625 N. Galvin Pkwy</p>
+</section>
+<section>
+<h2>Fee Table</h2>
+<p>The registration fee is $30, and you can select a shirt or a hat as a gift for an additional $5 each.</p>
+<div id="table">
+<table>
+<tr>
+<th>Item</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>Sign up</td>
+<td>$30.00</td>
+
+</tr>
+<tr>
+<td>Shirt Gift</td>
+<td>$5.00</td>
+</tr>
+<tr>
+<td>Hat Gift</td>
+<td>$5.00</td>
+</tr>
+</table>
+</div>
+</section>
+<section>
+<h2>Registration Form:</h2>
+<form>
+<table>
+<tr>
+<td><label for="email">Email:</label></td>
+<td><input type="email" id="email" name="email"></td>
+</tr>
+<tr>
+<td><label for="first-name">First Name:</label></td>
+<td><input type="text" id="first-name" name="first-name"></td>
+</tr>
+<tr>
+<td><label for="last-name">Last Name:</label></td>
+<td><input type="text" id="last-name" name="last-name"></td>
+</tr>
+<tr>
+<td><label for="payment-method">Payment Method:</label></td>
+<td>
+<select id="payment-method" name="payment-method">
+<option value="credit-card">Credit/Debit Card</option>
+<option value="paypal">PayPal</option>
+</select>
+</td>
+</tr>
+</table>
+<button type="submit" class="register-button">Submit</button>
+</form>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Papago Park's 8km Run. All rights reserved.</p>
+</footer>
+</body>
+</html>

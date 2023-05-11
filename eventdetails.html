@@ -1,0 +1,50 @@
+<!--Steven Montoya
+CIS 133
+Final Project-->
+<!--The intent of eventdetails.html is to show date, time, location, course map, and other specific details  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Papago Park's 8km Run - Event Details</title>
+<link rel="stylesheet" type="text/css" href="run.css">
+</head>
+<body>
+<header>
+<h1>Papago Park's 8km Run</h1>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="eventdetails.html">Event Details</a>
+<a href="registration.html">Registration</a>
+<a href="aboutus.html">About Us</a>
+<a href="contactus.html">Contact Us</a>
+</nav>
+<main> <!-- main element includes two sections -->
+<section>
+<h2>Past Events:</h2>
+May 20, 2022 - Papago Park's 8km Run
+<img src="runnerspapago.webp" alt="Runners"> <!--CRITERIA: 1 IMAGE -image of runners-->
+</section>
+<section>
+<h2>Next Event:</h2>
+<p>Date: May 20, 2023</p>
+<p>Time: 6:30AM until Last Participant Finishes</p>
+<p>Location: 625 N. Galvin Pkwy</p>
+<a href="registration.html" class="register-button">Register for Race</a> <!-- leads in for web viewer to register and pay a fee -->
+</section>
+<section>
+<h2>Course Map:</h2>
+<p>Click on Papago Park and Butte location to explore the enviroment around those course locations.</p>
+<img src="map.png" alt="Course Map" usemap="#map"> <!-- CRITERIA: IMAGE AND IMAGE MAP- A GOOGLE MAPS LINK IS CONNECTED TO THE COURSE IMAGE -->
+<map name="map">
+<area shape="rect" coords="100,100,200,200" href="https://www.google.com/maps/place/33%C2%B027'17.3%22N+111%C2%B057'16.1%22W/@33.4548174,-111.9593406,746m/data=!3m2!1e3!4b1!4m7!1m2!2m1!1spapago+park!3m3!8m2!3d33.454813!4d-111.954475" alt="Papago Park Parking">
+<area shape="rect" coords="100,200,300,300" href="https://www.tempe.gov/city-hall/community-services/parks/papago-park" alt="Papago Park"> <!-- tempe.gov Link is not found on image, possibly due to incoordinates -->
+</map>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Papago Park's 8km Run. All rights reserved.</p>
+</footer>
+</body>
+</html>

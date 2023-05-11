@@ -1,0 +1,170 @@
+/* Steven Montoya
+CIS 133
+Final Project */
+
+/* The intent of this css code is to style the webpages using color schemes, simple organizational sections, accessable to users to that all users are able to register and pay a fee to the company */
+
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Set body background color and font */
+body {
+  background-color: #F0CB28;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+/* Set header styles */
+header {
+  background-color: #22BBE6;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Set navigation menu styles */
+nav {
+  float: none;
+  background-color: #FF6842;
+  display: flex; /* variable fitting on page */
+  justify-content: space-between;
+  padding: 10px; 
+}
+
+nav a { /* Set color of navation menu*/
+  color: #000000; /* black text*/
+  text-decoration: none;
+  padding: 10px; /*empty space around the navagation content*/
+}
+
+nav a:hover {     /* Set color of navagation area when mouse hovers */
+  background-color: #000000; /* black box */
+  color: #fff/* white text*/
+}
+
+/* Set main content styles */
+main {
+  display: flex;
+  flex-wrap: wrap; /* moves into new line when not enough space*/
+  justify-content: space-between; /*  equal space between items */
+  padding: 20px; /* space around the main element of the space */
+}
+
+section {
+  background-color: #8FD927;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0px 2px 5px #aaa;
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+section img { /* Set styles for images inside sections only*/
+  border-radius: 10px; /* rounded corners */
+  display: block;
+  margin: auto; /*margins are the same around the picture: image is centered left and right withing an element */
+  max-width: 100%;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;  /* vertical alignment of form elements */
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #22BBE6;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+
+button:hover { /* changes button to black background when mouse hovers */
+  background-color: #000000;
+}
+
+.register-button { /* style for the specific registration (Submit) button*/
+  margin-top: 10px; /* spaces the button away from the payment method area */
+}
+
+/* Set footer styles */
+footer {
+  background-color: #22BBE6;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {/* centers the heading in the sections */
+	text-align: center;
+}
+
+
+#table { /* specific table styling for the fee table on the registration page */
+	padding:50px; /* enough space that isolates it */
+	border-spacing:6px;
+	padding-left:145px;/* centers a table in regular view */
+}
+
+@media screen and (min-width: 600px) {
+/* Set main content styles for medium displays */
+main {
+flex-wrap: wrap;
+}
+
+section {
+flex-basis: 48%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+/* Set main content styles for large displays */
+main {
+justify-content: space-between;
+}
+
+section {
+flex-basis: 30%;
+}
+}
+
+@media screen and (max-width: 480px) {
+/* Set main content styles for small displays and fixes issues with sections flattening the images and text */
+main {
+display: block;
+}
+section {
+flex-basis: 100%;
+}
+#table {
+	padding: 0px;
+	border-spacing:6px;
+	padding-left:110px; /* centers a table in mobile view*/
+}
+}
